@@ -3,7 +3,7 @@
 [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) [Docker](https://www.docker.com/) image based on [Debian _Jessie_](https://www.debian.org/releases/jessie/) with [PHP](http://php.net/)/[MySQL](https://www.mysql.com)/[PHPUnit](https://phpunit.de/) (and more !)
 
 
-# bitbucket-pipelines-phpunit-mysql
+# Description
 Bitbucket Pipelines image based on Debian/Jessie with PHPUnit/MySQL/Sencha CMD/Node/Composer/...
 
 Docker image at [hendrikprinsza/bitbucket-pipelines-phpunit-mysql](https://hub.docker.com/r/hendrikprinsza/bitbucket-pipelines-phpunit-mysql/) (no `CMD` as it is overriden by *Pipelines*)
