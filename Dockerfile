@@ -28,5 +28,9 @@ RUN \
     apt-get update &&\
     apt-get install -y rsync
 
-# docker build -t hendrikprinsza/bitbucket-pipelines-phpunit-mysql .
-# docker run -it --volume=/Applications/MAMP/htdocs/clevva:/clevva --workdir="/clevva" --memory=4g --memory-swap=4g --entrypoint=/bin/bash hendrikprinsza/bitbucket-pipelines-phpunit-mysql
+RUN \
+    curl -sSL https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
+    curl -sSL https://phar.phpunit.de/phpunit-5.7.phar -o /usr/bin/phpunit  && chmod +x /usr/bin/phpunit  &&\
+    curl -sSL http://codeception.com/codecept.phar -o /usr/bin/codecept && chmod +x /usr/bin/codecept &&\
+    npm install --no-color --production --global gulp-cli webpack mocha grunt &&\
+    rm -rf /root/.npm /root/.composer /tmp/* /var/lib/apt/lists/*
