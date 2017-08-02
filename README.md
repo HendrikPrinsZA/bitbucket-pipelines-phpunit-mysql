@@ -2,8 +2,6 @@
 
 *Please note that it does not include the **mysql server**, as you should be using pipeline's mysql service. However, it does include the **mysql client**.*
 
-----------
-
 ## Packages installed
  - [Node.js](https://nodejs.org/) `4.x LTS`
  - [Perl](https://www.perl.org/) `5.20`
@@ -15,14 +13,10 @@
  - [Composer](https://getcomposer.org/), [Gulp](http://gulpjs.com/), [Webpack](https://webpack.github.io/), [Mocha](https://mochajs.org/), [Grunt](http://gruntjs.com/), [Codeception](https://codeception.com/), [Yarn](https://yarnpkg.com/) `latest`
  - `apt-transport-https`, `bzip2`, `ca-certificates`, `clean-css-cli`, `curl`, `gettext`, `git`, `imagemagick`, `memcached`, `mysql-client`, `openjdk-7-jre`, `openssh-client`, `perl`, `php-gettext`, `php5-apcu`, `php5-cli`, `php5-curl`, `php5-gd`, `php5-geoip`, `php5-imagick`, `php5-intl`, `php5-json`, `php5-mcrypt`, `php5-memcached`, `php5-mysqlnd`, `php5-sqlite`, `php5-xdebug`, `php5-xhprof`, `php5-xmlrpc`, `python`, `python3`, `rsync`, `ruby`, `software-properties-common`, `subversion`, `unzip`, `uglify-js`, `wget`, `zip`
 
-----------
-
 ## Example - Local
 ```SHELL
 docker run -it --volume=/Applications/MAMP/htdocs/project:/project --workdir="/project" --entrypoint=/bin/bash hendrikprinsza/bitbucket-pipelines-phpunit-mysql
 ```
-
-----------
 
 ## Example - [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines)
 ```YAML
